@@ -3,7 +3,8 @@
 
 ## Architecture  
 
-![Architecture Overview](./doc/Architecture Overview.png)
+<!-- ![Architecture Overview](./doc/Architecture Overview.png) -->
+<img src="doc/Architecture Overview.png" width=80%>
 
 - One to many tweet-harvesters
 - Single `CouchDB` instance running on Docker
