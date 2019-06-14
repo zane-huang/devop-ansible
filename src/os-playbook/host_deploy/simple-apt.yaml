@@ -1,0 +1,25 @@
+- hosts: 
+    all
+
+  vars:
+    apt_packages:
+      - git
+      - python-pip
+      - python3-pip
+      - docker.io
+    
+    pip_packages:
+      - tweepy
+
+    pip_executable: pip3
+
+
+  tasks:
+    # apt-get update
+    # apt install [packages]
+    - name: Update apt cache and install "{{ apt_packages }}"
+      become: true
+      apt:
+        name: "{{ apt_packages }}"
+        state: latest
+        update_cache: yes
