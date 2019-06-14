@@ -3,6 +3,8 @@
 
 ## Architecture  
 
+![Architecture Overview](./doc/Architecture Overview.png)
+
 - One to many tweet-harvesters
 - Single `CouchDB` instance running on Docker
 - Web hosting using `nginx` running on Docker
